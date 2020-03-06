@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pento | 購物車</title>
+    <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/products_list.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/shopping_cart.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <header>
+                <div class="container">
+                    <!--                --------header logo 區------------>
+                    <div class="logo">
+                        <a href="/index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a>
+                    </div>
+                    <!--                --------header nav選單 區------------>
+                    <nav class="nav">
+                        <ul class="header-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <hr>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <hr>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <!--                --------header member-cart會員按鈕區------------>
+                    <div class="member-cart">
+                        <div class="member">
+                            <a href="login.html">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="shopping_cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="cart"></div>
+                        <!--                    --------header 選單縮放 按鈕區------------>
+                        <button><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="store_wrapper">
+            <div class="store_container">
+                <!--            麵包屑-->
+                <!-- <div class="padding_30"> -->
+                <ol class="breadcrumb-item">
+                    <li><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb_transparent">|</li>
+                    <li class="breadcrumb_active"><a href="shopping_cart.html">購物車</a></li>
+                </ol>
+                <!-- </div> -->
+                <!--            頁面位置-->
+                <div class="page_title">
+                    <!-- <i class="fas fa-bell"></i> -->
+                    <div class="page_title_container">
+                        <img src="images/ponit.png" alt="">
+                        <div class="heading_title">&nbsp購物車&nbsp</div>
+                        <img src="images/ponit.png" alt="">
+                    </div>
+                    <hr class="divider" />
+                </div>
+                <!-- </div> -->
+
+
+
+
+                <div id="content">
+                    <div class="status">
+                        <hr class="status-line">
+                        <div class="block block1">1</div>
+                        <div class="block block2">2</div>
+                        <div class="block block3">3</div>
+                    </div>
+
+                    <div class="status-word">
+                        <p>購物車</p>
+                        <p>填寫資料</p>
+                        <p>訂單確認</p>
+                    </div>
+
+                    <div class="order-box">
+                        <div class="title-name">
+                            <div class="one">商品名稱</div>
+                            <div class="two">單價</div>
+                            <div class="three">數量</div>
+                            <div class="four">小計</div>
+                            <div class="five"></div>
+
+                        </div>
+
+
+                        <div class="fir">
+                            <div class="pic-word-box">
+
+                                <div class="pic"><img src="images/products/red.png"></div>
+
+                                <div class="word">
+                                    <div class="pd-title">《鮮食調理包》</div>
+
+                                    <div class="two">NT$
+                                        <span class="price1">128</span></div>
+                                    <div class="qty-input-c">
+                                        <div class="qty-input">
+                                            <div class="less less1"><i class="fas fa-minus fa-xs"></i></div>
+                                            <input type="text" value="3" class="input1"
+                                                onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more less1"><i class="fas fa-plus fa-xs"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="four">NT$
+                                        <span class="fprice1">384</span></div>
+                                    <div class="five delete1"><i class="fas fa-times-circle fa-sm"></i></div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="or-line">
+
+                        <div class="sec">
+                            <div class="pic-word-box">
+
+                                <div class="pic"><img src="images/products/yellow.png"></div>
+
+                                <div class="word">
+                                    <div class="pd-title">《鮮食調理包-超值組合》</div>
+
+                                    <div class="two">NT$
+                                        <span class="price2">666</span></div>
+                                    <div class="qty-input-c">
+                                        <div class="qty-input">
+                                            <div class="less less2"><i class="fas fa-minus fa-xs"></i></div>
+                                            <input type="text" value="1" class="input2"
+                                                onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more more2"><i class="fas fa-plus fa-xs"></i></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="four">NT$
+                                        <span class="fprice2">666</span>
+                                    </div>
+
+                                    <div class="five delete2"><i class="fas fa-times-circle fa-sm"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="or-line">
+
+                        <div class="thr">
+                            <div class="pic-word-box">
+                                <div class="pic"><img src="images/products/MEAT_beef.png"></div>
+
+                                <div class="word">
+                                    <div class="pd-title">《天然手作肉乾》</div>
+
+                                    <div class="two">NT$
+                                        <span class="price3">160</span></div>
+                                    <div class="qty-input-c">
+                                        <div class="qty-input">
+                                            <div class="less less3"><i class="fas fa-minus fa-xs"></i></div>
+                                            <input type="text" value="3" class="input3"
+                                                onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more more3"><i class="fas fa-plus fa-xs"></i></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="four">NT$
+                                        <span class="fprice3">480</span></div>
+
+                                    <div class="five delete3"><i class="fas fa-times-circle fa-sm"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="pay-line">
+
+
+                    <div class="pay-box">
+                        <div class="am-btn-box">
+
+                            <div class="amount">
+                                <div class="item-box">
+                                    <div class="item-name">
+                                        <p class="oth-color">小計:</p>
+                                        <p class="oth-color">運費:</p>
+                                        <p>合計:</p>
+                                    </div>
+
+                                    <div class="item-price">
+                                        <p>NT$ <span class="p_price">1402</span> </p>
+                                        <p>NT$ <span>100</span></p>
+                                        <p>NT$ <span class="t_price">1502</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="bp-btn-box">
+                                    <div class="buy-btn">
+                                        <a href="products_list.html">繼續購物</a>
+                                    </div>
+
+                                    <div class="pay-btn">
+                                        <a href="shopping_cart_form.html">下一步 </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- id_footer -->
+        <div id="footer">
+            <footer>
+                <div class="footer-container">
+                    <nav class="footer-left">
+                        <ul class="footer-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-line"></div>
+                    <div class="footer-right">
+                        <div class="footer-info">
+                            <p><span>服務時間：</span>週一至週五9:30-18:00</p>
+                            <p><span>客服專線：</span>04-1234-5678</p>
+                            <p><span>客服信箱：</span>service@pento.com</p>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                            <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <i class="far fa-copyright"></i>
+                            <p>2020 Pento</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- id_footer end -->
+    </div>
+    <!--script-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/count.js"></script>
+    <script>
+
+        $('.five>i').click(function () {
+            // Remove Items From Cart
+            event.preventDefault();
+            $(this).parent().parent().parent().parent().hide(400);
+            $('.or-line').hide(400);
+
+        });
+    </script>
+
+</body>
+
+</html>

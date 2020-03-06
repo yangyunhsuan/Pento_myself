@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pento | 產品介紹</title>
+    <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+
+    <!-- 1140 -->
+
+    <div id="wrapper">
+        <div id="header">
+            <header>
+                <div class="container">
+                    <!--                --------header logo 區------------>
+                    <div class="logo">
+                        <a href="/index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a>
+                    </div>
+                    <!--                --------header nav選單 區------------>
+                    <nav class="nav">
+                        <ul class="header-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <hr>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <hr>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <!--                --------header member-cart會員按鈕區------------>
+                    <div class="member-cart">
+                        <div class="member">
+                            <a href="login.html">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="shopping_cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="cart"></div>
+                        <!--                    --------header 選單縮放 按鈕區------------>
+                        <button><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- id_header end-->
+        <div class="product_container">
+            <ol class="breadcrumb-item">
+                <li><a href="index.html">首頁</a></li>
+                <li class="breadcrumb_transparent">|</li>
+                <li class="breadcrumb_active"><a href="products_list.html">產品列表</a></li>
+            </ol>
+
+            <div class="preview">
+                <div class="preview_photo">
+                    <img src="images/products/red.png" alt="">
+                </div>
+                <div class="preview_content">
+                    <div class="preview_text">
+                        <div class="text01">
+                            <div style="font-size: 1.3em;">《 鮮食調理包 》<span class="web_title">鮮蝦番茄鮭魚口味 ( 犬用 )</span></div>
+                            <span class="text01_description">鮮蝦番茄鮭魚口味 ( 犬用 ) </span>
+                        </div>
+                        <div class="text02" style="font-size: 1em;">全店、全館結帳金額滿NT$1600，即享免運優惠(限台灣本地)</div><br>
+                        <div class="text03" style="font-size: 1.3em;">NT$180</div>
+                    </div>
+                    <div class="preview_button">
+                        <div class="qty-input">
+                            <div class="less"><i class="fas fa-minus fa-xs"></i></div>
+                            <input type="text" value="1"
+                                onkeyup="return ValidateNumber($(this),value)" />
+                            <div class="more"><i class="fas fa-plus fa-xs"></i></div>
+                        </div>
+                        <div class="add_to_cart">加入購物車</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product_description">
+                <div class="paragraph">
+                    <span>《商品描述》</span>
+                    <div class="product_title">
+                        <h3 class="text04">全齡狗狗機能性主食新選擇</h3>
+                        <div class="footprint"><img src="images/description/footprint.png" alt=""></div>
+                    </div>
+                    <span class="text05">
+                    犬用寵物鮮食推薦，開封即食、免加熱、免解凍！<br>
+                    由專業營養師調配之食材組合，
+                    番茄、甜椒、菠菜提供充足的膳食纖維及維生素
+                    鮭魚則含有豐富之DPA & DHA及優良油脂、蛋白質，
+                    幫親愛的狗狗補充日常所需的各式營養素。</span>
+                </div>
+                <div class="product_img">
+                    <!-- <img src="images/description/feed.jpg" alt=""> -->
+                    <img src="images/description/p1.png" alt="">
+                    <img src="images/description/p2.png" alt="">
+                </div>
+            </div>
+            <div class="product_return">
+                <div class="return_button"><a href="products_list.html">返回</a></div>
+            </div>
+
+        </div>
+        <!-- products_content end-->
+
+        <div id="footer">
+            <footer>
+                <div class="footer-container">
+                    <nav class="footer-left">
+                        <ul class="footer-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-line"></div>
+                    <div class="footer-right">
+                        <div class="footer-info">
+                            <p><span>服務時間：</span>週一至週五9:30-18:00</p>
+                            <p><span>客服專線：</span>04-1234-5678</p>
+                            <p><span>客服信箱：</span>service@pento.com</p>
+                        </div>
+                        <div class="footer-down-info">
+                            <div class="footer-icon">
+                                <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                                <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                                <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="copyright">
+                                <i class="far fa-copyright"></i>
+                                <p>2020 Pento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- id_footer end -->
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/quantity.js"></script>
+</body>
+
+</html>

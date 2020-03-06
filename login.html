@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pento | 會員登入</title>
+    <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <header>
+                <div class="container">
+                    <!--                --------header logo 區------------>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a>
+                    </div>
+                    <!--                --------header nav選單 區------------>
+                    <nav class="nav">
+                        <ul class="header-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <hr>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <hr>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <!--                --------header member-cart會員按鈕區------------>
+                    <div class="member-cart">
+                        <div class="member">
+                            <a href="login.html">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="shopping_cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="cart"></div>
+                        <!--                    --------header 選單縮放 按鈕區------------>
+                        <button><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="login_container">
+            <div class="login-box">
+                <div class="lb-header">
+                    <a href="#" class="active" id="login-box-link">會員登入</a>
+                    <a href="#" id="signup-box-link">註冊會員</a>
+                </div>
+                <form class="email-login">
+                    <div class="title">會員登入</div>
+                    <div class="u-form-group inputblock">
+                        <label for="email">信箱：</label>
+                        <input type="email" id="email" />
+                    </div>
+                    <div class="u-form-group inputblock">
+                        <label for="password">密碼：</label>
+                        <input type="password" id="password" />
+                    </div>
+                    <div class="u-form-group">
+                        <button class="login-a"><a href="user_info.html">立即登入</a></button>
+                    </div>
+                    <div class="u-form-group">
+                        <a href="resetpassword.html" class="forgot-password">忘記密碼</a>
+                    </div>
+                </form>
+                <form class="email-signup">
+                    <div class="title">註冊會員</div>
+                    <div class="u-form-group">
+                        <label for="name">&emsp;&emsp;姓名：</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="u-form-group">
+                        <label for="signup_email">&emsp;&emsp;信箱：</label>
+                        <input type="email" id="signup_email" />
+                    </div>
+                    <div class="u-form-group">
+                        <label for="signup_password">&emsp;&emsp;密碼：</label>
+                        <input type="password" placeholder="至少8位" id="signup_password" />
+                    </div>
+                    <div class="u-form-group">
+                        <label for="confirm_password">確認密碼：</label>
+                        <input type="password" id="confirm_password" />
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="news" value="checked">我同意接收商店資訊與優惠訊息&emsp;&emsp;
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="policy" value="checked" checked>我已閱讀並同意網站條款及隱私政策
+                    </div>
+                    <div class="u-form-group">
+                        <button><a href="login_sucessful.html">立即註冊</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <footer>
+                <div class="footer-container">
+                    <nav class="footer-left">
+                        <ul class="footer-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-line"></div>
+                    <div class="footer-right">
+                        <div class="footer-info">
+                            <p><span>服務時間：</span>週一至週五9:30-18:00</p>
+                            <p><span>客服專線：</span>04-1234-5678</p>
+                            <p><span>客服信箱：</span>service@pento.com</p>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                            <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <i class="far fa-copyright"></i>
+                            <p>2020 Pento</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script>
+        $(".email-signup").hide();
+        $("#signup-box-link").click(function () {
+            $(".email-login").fadeOut(100);
+            $(".email-signup").delay(100).fadeIn(100);
+            $("#login-box-link").removeClass("active");
+            $("#signup-box-link").addClass("active");
+        });
+        $("#login-box-link").click(function () {
+            $(".email-login").delay(100).fadeIn(100);;
+            $(".email-signup").fadeOut(100);
+            $("#login-box-link").addClass("active");
+            $("#signup-box-link").removeClass("active");
+        });
+    </script>
+</body>
+
+</html>

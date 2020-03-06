@@ -1,0 +1,44 @@
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.login-box i{
+    font-size: 3em;
+    color: #FEDC5E;
+}
+.login-box h2{
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 5% 0 2% 0;
+}
+.login-box p{
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin: 0 0 3% 0;
+    color: gray;
+    text-align: center;
+    line-height: 25px;
+}
+.login-box button{
+    font-size: 14px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    background-color: #FEDC5E;
+    border-radius: 50px;
+    outline: none;
+}
+
+
+/* .login-box a{
+    display: block;
+    width: 250px;
+    line-height: 40px;
+    border: none;
+    text-align: center;
+    background-color: #FEDC5E;
+    border-radius: 50px;
+    margin: 5% 0 0 0;
+} */

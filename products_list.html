@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pento | 產品列表</title>
+    <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/products_list.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <header>
+                <div class="container">
+                    <!--                --------header logo 區------------>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a>
+                    </div>
+                    <!--                --------header nav選單 區------------>
+                    <nav class="nav">
+                        <ul class="header-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <hr>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <hr>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <!--                --------header member-cart會員按鈕區------------>
+                    <div class="member-cart">
+                        <div class="member">
+                            <a href="login.html">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="shopping_cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="cart"></div>
+                        <!--                    --------header 選單縮放 按鈕區------------>
+                        <button><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="product_wrapper">
+            <div class="product_container">
+                <ol class="breadcrumb-item">
+                    <li><a href="index.html">首頁</a></li>
+                    <li>|</li>
+                    <li class="breadcrumb_active"><a href="products_list.html">所有商品</a></li>
+                </ol>
+                <!-- </div> -->
+                <!--            頁面位置-->
+                <div class="page_title">
+                    <!-- <i class="fas fa-bell"></i> -->
+                    <div class="page_title_container">
+                        <img src="images/ponit.png" alt="">
+                        <div class="heading_title">&nbsp所有商品&nbsp</div>
+                        <img src="images/ponit.png" alt="">
+                    </div>
+                    <hr class="divider" />
+                </div>
+                <!--            main-->
+                <div class="product_start">
+                    <!--               側邊欄-->
+                    <div class="product_sidemenu_block">
+                        <ul class="product_sidemenu">
+                            <li class="menu_title"><a href="javascript:void(0);">所有商品</a>
+                            <li class="menu_title"><a href="javascript:void(0);">狗狗鮮食</a>
+                                <ul class="submenu submenu1">
+                                    <li><a href="javascript:void(0);">鮮食調理包</a></li>
+                                    <li><a href="javascript:void(0);">手作肉乾&emsp;</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu_title"><a href="javascript:void(0);">貓貓鮮食</a>
+                                <ul class="submenu submenu2">
+                                    <li><a href="javascript:void(0);">鮮食調理包</a></li>
+                                    <li><a href="javascript:void(0);">手作肉乾&emsp;</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--                商品區塊-->
+                    <div class="product_list_block">
+                        <div class="product_area">
+                            
+
+                            
+
+
+                        </div>
+                        <!--                    返回扭-->
+                        <div class="button_area">
+                            <a href="products_list.html" class="back_button">
+                                返回</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <footer>
+                <div class="footer-container">
+                    <nav class="footer-left">
+                        <ul class="footer-menu">
+                            <li><a href="news_list.html">最新消息</a></li>
+                            <li><a href="products_list.html">所有商品</a></li>
+                            <li><a href="stores.html">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-line"></div>
+                    <div class="footer-right">
+                        <div class="footer-info">
+                            <p><span>服務時間：</span>週一至週五9:30-18:00</p>
+                            <p><span>客服專線：</span>04-1234-5678</p>
+                            <p><span>客服信箱：</span>service@pento.com</p>
+                        </div>
+                        <div class="footer-icon">
+                            <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                            <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <i class="far fa-copyright"></i>
+                            <p>2020 Pento</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- id_footer end -->
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script src="js/quantity.js"></script>
+    <script>
+        $(".product_sidemenu a").click(function (e) {
+            $(".product_sidemenu .submenu").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
+                e.stopPropagation()
+        })
+
+        $('.product_area').load('products_list-1.html');
+        
+        $('.menu_title>a').click(function (e) {
+            let x = $(this).parent().index();
+            console.log(x);
+            switch (x) {
+                case 0:
+                    $('.product_area').load('products_list-1.html');
+                    break;
+//                case 1:
+//                    $('.product_area').load('products_list-2.html');
+//                    break;
+//                case 2:
+//                    $('.product_area').load('products_list-3.html');
+//                    break;
+            }
+        });
+        
+        $('.submenu1>li>a').click(function (e) {
+            let y = $(this).parent().index();
+            console.log(y);
+            switch (y) {
+                case 0:
+//                console.log("111");
+                    $('.product_area').load('products_list-2-1.html');
+                    break;
+                case 1:
+//                   console.log("222");
+                    $('.product_area').load('products_list-2-2.html');
+                    break;
+            }
+        });
+        
+        $('.submenu2>li>a').click(function (e) {
+            let z = $(this).parent().index();
+            console.log(z);
+            switch (z) {
+                case 0:
+//                console.log("333");
+                    $('.product_area').load('products_list-3-1.html');
+                    break;
+                case 1:
+//                   console.log("444");
+                    $('.product_area').load('products_list-3-2.html');
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>

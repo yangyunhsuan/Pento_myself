@@ -1,0 +1,246 @@
+body {
+    font-family: "微軟正黑體";
+    font-size: 0.95em;
+    background-color: #fffbed;
+}
+
+.breadcrumb-sec {
+    max-width: 1140px;
+    margin: auto;
+    padding: 30px;
+}
+
+.breadcrumb-item>li {
+    display: inline-block;
+    padding: 0 3px;
+    font-weight: lighter;
+}
+
+.breadcrumb-item>li>a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: normal;
+}
+
+
+#content{
+    padding-top: 50px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: 130px auto 110px auto;
+}
+
+main>aside {
+    padding: 70px 0 0 0px;
+    margin-right: 100px;
+}
+
+.all_order {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        width: 90%;
+        margin: 0px auto 30px auto;
+    }
+    main>.aside {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+    main>.aside>a {
+        margin: 0 0;
+        width: 50%;
+        display: block;
+    }
+}
+
+
+/* info-sec 768 end */
+
+.aside>.active {
+    background-color: #FEDC5E;
+    border: none;
+}
+
+.aside>a {
+    display: block;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .aside>.active {
+        background-color: #FEDC5E;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .aside>a {
+        display: block;
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+    
+    
+}
+
+
+/* ---------------aside結束---------------- */
+
+.product_list,
+.user_information {
+    padding: 0 20px;
+    border: 1px solid #6F6F6F;
+    margin-bottom: 20px;
+    
+}
+
+.product_list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+.user_information {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+}
+
+.product_list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_list ul li p {
+    font-size: .9rem;
+    margin: 10px auto;
+    letter-spacing: 0.03rem;
+}
+
+.bottom_line {
+    border-bottom: 1px solid rgba(165, 165, 165, 0.50);
+}
+
+.another_bottom_line {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.50);
+}
+
+
+@media screen and (max-width: 768px) {
+    .product_list ul li img {
+        display: none;
+    }
+}
+
+.img_and_text {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    /* .img_and_text {
+        width: 40%;
+        line-height: 70px;
+    } */
+}
+
+.img_and_text {
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    align-self: flex-end;
+}
+
+.total li p {
+    padding-left: 20px;
+}
+
+.user_information ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_information ul p {
+    line-height: 25px;
+}
+
+.text_bold {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.user_information p:nth-child(2) {
+    width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .user_information ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    .user_information ul li p:nth-child(2) {
+        color: #747474;
+    }
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    align-self: flex-end;
+    background-color: #007f4e;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+button a {
+    display: block;
+    width: 100%;
+    /* line-height: 40px; */
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.user_information ul li p {
+    line-height: 32px;
+    letter-spacing: 0.03rem;
+}

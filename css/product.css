@@ -1,0 +1,192 @@
+body {
+    background-color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+
+.product_container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.preview {
+    display: flex;
+    border-bottom: 3px solid #fedc5e;
+    padding-bottom: 5%;
+}
+
+.preview>.preview_photo {
+    width: 50%;
+}
+
+.preview>.preview_photo>img {
+    background-color: white;
+    padding: 5px;
+    margin: 15px;
+    width: 80%;
+}
+
+.preview>.preview_content {
+    width: 100%;
+}
+
+.preview_content>.preview_text>.text01 {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    margin-bottom: 5%;
+}
+
+.preview_content>.preview_text>.text02 {
+    margin: 15px;
+    margin-bottom: 0.5%;
+    margin-left: 4%;
+}
+
+.preview_content>.preview_text>.text03 {
+    margin: 15px;
+    font-weight: bold;
+    margin-bottom: 8%;
+    margin-left: 4%;
+}
+
+.preview_button {
+    margin-bottom: 10%;
+}
+
+.product_container>.preview>.preview_content>.preview_button>.purchase_button {
+    width: 28%;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #007f4e;
+    border-radius: 8px;
+    margin-left: 4%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.product_description {
+    background-color: lightyellow;
+}
+
+.product_description>.paragraph {
+    padding: 30px;
+}
+
+.product_description>.paragraph>.product_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_description>.paragraph>.product_title>.text04 {
+    font-size: 2em;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 0.1em;
+}
+
+.product_description>.paragraph>.product_title>.footprint {
+    width: 20%;
+}
+
+.product_description>.paragraph>.text05 {
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    /* font-weight: bold; */
+    line-height: 40px;
+}
+
+.product_description>.product_img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product_description>.product_img>img {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.product_container>.product_return {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.product_container>.product_return>.return_button {
+    width: 11%;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #007f4e;
+    border-radius: 8px;
+    margin-left: 80%;
+    text-align: center;
+    line-height: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .product_container>.preview {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 3px solid #fedc5e;
+        padding-bottom: 5%;
+    }
+    .product_container>.preview>.preview_photo {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .product_description>.paragraph>.product_title>.footprint>img {
+        width: 150%;
+        margin-left: 350%;
+    }
+    .preview_content>.preview_text>.text01 {
+        flex-direction: column;
+        margin: 10px;
+        font-weight: bold;
+        margin-bottom: 2%;
+        margin-left: 11%;
+    }
+    .preview_content>.preview_text>.text01>.flavor {
+        margin-left: 4%;
+        line-height: 32px;
+    }
+    .preview_content>.preview_text>.text02 {
+        margin: 10px;
+        font-weight: bold;
+        margin-bottom: 2%;
+        margin-left: 14%;
+        line-height: 24px;
+    }
+    .preview_content>.preview_text>.text03 {
+        margin: 10px;
+        font-weight: bold;
+        margin-bottom: 2%;
+        margin-left: 14%;
+    }
+    .product_container>.preview>.preview_content>.preview_button>.purchase_button {
+        margin-left: 14%;
+    }
+    .preview {
+        padding: 5%;
+    }
+    .product_description>.paragraph>.product_title {
+        padding-bottom: 25%;
+        position: relative;
+    }
+    .product_description>.paragraph>.product_title>.text04 {
+        position: absolute;
+    }
+    .product_description>.paragraph>.text05>br {
+        display: none;
+    }
+    .product_container>.product_return>.return_button {
+        width: 40%;
+        line-height: 30px;
+        margin-left: 50%;
+    }
+    .product_return>.return_button>a {
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+}

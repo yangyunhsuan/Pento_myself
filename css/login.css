@@ -1,0 +1,141 @@
+body{
+    background-color: #fffbed;
+}
+
+.login_container {
+    width: 100%;
+    /* padding-bottom: 200px; */
+}
+
+.login-box {
+    position: relative;
+    margin: 70px auto 100px;
+    width: 500px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
+    /* margin-bottom: 230px; */
+}
+
+@media screen and (max-width:768px) {
+    .login-box {
+        position: relative;
+        margin: 70px auto 70px;
+        width: 90%;
+        height: 390px;
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.33);
+    }
+}
+
+.lb-header {
+    position: relative;
+    /* padding-bottom: 10px; */
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    height: 28px;
+    padding-top: 10px;
+}
+
+.lb-header a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+    transition: all 0.1s linear;
+}
+
+.lb-header .active {
+    color: #039958;
+    font-size: 18px;
+}
+
+.title {
+    padding-top: 10px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.email-login,
+.email-signup {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    /* margin-top: 10px; */
+    text-align: center;
+}
+
+.u-form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.u-form-group label {
+    font-size: 14px;
+}
+
+.u-form-group input[type="email"],
+.u-form-group input[type="password"],
+.u-form-group input[type="text"] {
+    height: 32px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 0.8rem;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.u-form-group input:focus {
+    border-color: #029f5b;
+}
+
+.u-form-group button {
+    width: 50%;
+    height: 40px;
+    background-color: #FEDC5E;
+    border: none;
+    outline: none;
+    /* color: #007f4e; */
+    font-size: 14px;
+    font-weight: normal;
+    /* padding: 14px 0; */
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.u-form-group .login-a>a{
+    display: block;
+    line-height: 40px;
+}
+
+ ::placeholder {
+    color: rgb(155, 155, 155);
+    opacity: 1;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.forgot-password {
+    width: 50%;
+    text-align: left;
+    text-decoration: underline;
+    color: #888;
+    font-size: 0.75rem;
+}

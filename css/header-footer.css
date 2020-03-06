@@ -1,0 +1,389 @@
+html,
+body {
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/*以下為header區*/
+
+
+/*以下為header區*/
+
+
+/*以下為header區*/
+
+#header {
+    position: relative;
+}
+
+header {
+    height: 110px;
+    width: 100%;
+    background-color: white;
+    /*     background-color: antiquewhite; */
+    box-shadow: 1px 1px 15px rgba(43, 43, 43, 0.15);
+}
+
+header .container {
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: auto;
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*    background-color: aqua; */
+}
+
+
+/*--------header logo 區----------*/
+
+header .logo img {
+    height: 65px;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: 90px;
+    }
+    header .container {
+        padding: 20px 20px;
+        position: relative;
+    }
+    header .logo img {
+        height: 55px;
+    }
+}
+
+
+/*--------header nav選單 區----------*/
+
+header .nav {
+    height: 20px;
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    header .nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 60vw;
+        height: 100vh;
+        /*        background-color: rgba(132, 63, 63, 0.99);*/
+        z-index: 5;
+        background-color: #555555;
+    }
+}
+
+
+/*--------header nav選單 選項 區----------*/
+
+.header-menu {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu>li {
+    text-align: center;
+}
+
+.header-menu>hr {
+    height: 15%;
+    border: 0.5px solid #afafaf;
+}
+
+@media screen and (max-width:768px) {
+    .header-menu {
+        padding-top: 80px;
+        flex-direction: column;
+    }
+    .header-menu>li {
+        /*        background-color: aquamarine;*/
+        margin: auto;
+        width: 40vw;
+        height: 10vh;
+        border-bottom: 1px solid #919191;
+    }
+    .header-menu>li>a {
+        display: block;
+        /*        background-color: azure;*/
+        color: white;
+        line-height: 10vh;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .header-menu {
+        height: 110px;
+        margin-top: -53px;
+        align-items: center;
+    }
+    .header-menu>li {
+        box-sizing: border-box;
+        /*        background-color: aqua;*/
+        width: 34%;
+    }
+    .header-menu>li>a {
+        display: block;
+        line-height: 110px;
+        transition: all 0.3s linear;
+    }
+    .header-menu>li:hover {
+        background-color: #fff8ee;
+        border-bottom: 3px solid #fedc5e;
+    }
+    .header-menu>li:hover a {
+        color: #81552f;
+    }
+}
+
+
+/*--------header member-cart會員按鈕區----------*/
+
+header .member-cart {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    /*    background-color: aqua;*/
+}
+
+@media screen and (max-width:768px) {
+    header .member-cart {
+        max-width: 100px;
+        height: 20px;
+        width: 100%;
+        max-width: 100px;
+        position: relative;
+    }
+}
+
+
+/*--------header 會員icon區----------*/
+
+header .member>a,
+.cart>a {
+    display: flex;
+    justify-content: flex-start;
+    color: #555555;
+    transition: all 0.5s linear;
+}
+
+header .member>a:hover,
+.cart>a:hover {
+    color: #81552F;
+}
+
+@media screen and (min-width:768px) {
+    header .member>a {
+        padding: 0 20px;
+    }
+}
+
+
+/*--------header 選單縮放 按鈕區----------*/
+
+header .member-cart>button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 0;
+}
+
+header .member-cart>button>i {
+    cursor: pointer;
+    font-size: 2em;
+    color: #555555;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+header .member-cart>button>i.fa-times {
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    header .member-cart>button>i {
+        display: none;
+    }
+}
+
+;
+
+/*.member-cart>button min 768 end*/
+
+
+/*以下為content區*/
+
+
+/*以下為content區*/
+
+
+/*以下為content區*/
+
+
+/* #content {
+    padding-bottom: 230px;
+} */
+
+
+/*以下為footer區*/
+
+
+/*以下為footer區*/
+
+
+/*以下為footer區*/
+
+#footer {
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+}
+
+footer {
+    background-color: #FEDC5E;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:566px) {
+    footer {
+        height: auto;
+    }
+}
+
+
+/*-------footer all 區--------*/
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width:566px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+}
+
+
+/*-------footer 選單 區--------*/
+
+.footer-menu>li {
+    padding-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.footer-line {
+    border-right: 1px solid black;
+    height: 70px;
+    margin: 0 30px;
+}
+
+@media screen and (max-width:566px) {
+    .footer-left {
+        /*        display: none;*/
+        margin-bottom: 20px;
+    }
+    .footer-menu>li {
+        padding: 15px;
+        border-bottom: 1px solid black;
+    }
+    .footer-line {
+        border-right: 0px;
+        border-bottom: 1px solid black;
+        height: 0px;
+        width: 80%;
+        margin: 10px 0px 15px 0px;
+        display: none;
+    }
+}
+
+
+/*-------footer 資訊 區--------*/
+
+.footer-info>p {
+    font-size: 0.9em;
+    margin-bottom: 13px;
+}
+
+@media screen and (max-width:566px) {
+    .footer-info>p {
+        text-align: center;
+        line-height: 20px;
+    }
+    .footer-info>p>span {
+        display: none;
+    }
+}
+
+
+/*-------footer 外部連結＋版權聲明 區--------*/
+
+.footer-down-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icon {
+    font-size: 1.25em;
+    margin-bottom: 5%;
+}
+
+.copyright {
+    display: flex;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:566px) {
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-down-info {
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-icon {
+        width: 80%;
+        font-size: 1.7em;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-bottom: 10px;
+        /*        background-color: aqua;*/
+    }
+    .footer-icon>i {
+        padding-bottom: 20px;
+    }
+    .copyright {
+        margin: auto;
+    }
+}
+
+
+/*footer-down-info max 768 end*/

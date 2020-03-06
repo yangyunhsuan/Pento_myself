@@ -1,0 +1,503 @@
+body{
+    background-color:#FFFBED;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+h2,h3{
+    color: #81552F;  
+    font-size: 1rem;
+    text-align: center;
+    margin: 5% 0;
+}
+header{
+    background-color: transparent;
+    box-shadow: none;
+}
+@media screen and (min-width:769px){
+    .header-menu>li:hover{
+        background-color: transparent;
+        border-bottom: none;
+    }
+}
+
+.main{
+    margin-top: -90px;
+}
+/*--以下為banner 視覺大圖 區--*/
+.banner{
+    background-image: url(../images/index/guiji-bg-w1920.jpg);
+    background-size: auto 50%;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width:566px){
+    .banner{
+        height: 80vh;
+        background-size: auto 100%;
+    }
+}
+@media screen and (min-width:769px){
+    .main{
+        margin-top: -110px;
+    }
+    .banner{
+        height: 95vh;
+        background-size: cover;
+    }
+}
+.banner_desc{
+    padding-top: 50%;
+    color: white;
+    text-shadow: 0em 0em 0.2em #333;
+}
+.banner_desc>p{
+    font-size: 1.3rem;
+    padding: 5% 0;
+    letter-spacing: 3px;
+}
+.banner_desc>span{
+    font-size: 0.9rem;
+    letter-spacing: 7px;
+}
+.banner_bm{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.banner_bm_bg{
+    width: 100%;
+    margin-bottom: -1%;
+}
+.banner_food{
+    width: 30%;
+    max-width: 300px;
+    position: absolute;
+    top: -20px;
+    right: 35%;
+}
+@media screen and (min-width:900px){
+    .banner_desc{
+        padding-top: 15%;
+        margin-left: -30%;
+    }
+    .banner_desc>p{
+        font-size: 1.8rem;
+    }
+    .banner_desc>span{
+        font-size: 1.35rem;
+    }
+    .banner_food{
+        width: 300px;
+        right:calc( 50% - 150px);
+    }
+}
+@media screen and (min-width:1740px){
+    .banner_desc{
+        padding-top: 10%;
+        margin-left: -30%;
+    }    
+}
+/*--    以下為story 品牌故事 區--*/
+.story{
+    position: relative;
+/*    border: 3px solid aqua;*/
+    margin-top: 30%;   
+}
+@media screen and (min-width:769px){
+    .story{
+        margin-top: 20%;   
+    }
+}
+@media screen and (min-width:1140px){
+    .story{
+        margin-top: 10%;   
+    }
+}
+/*--    以下為story 品牌故事 Ｍ 區--*/
+.story_m{
+    padding: 0 10%;
+    margin: auto;
+/*    border: 3px solid black;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.story_m>img{
+    width: 90%;
+}
+.story_m>h2{
+    line-height:30px;
+    font-size: 0.98rem;
+}
+.story_m>h2>span{
+    display: none;
+}
+.story_m>p{
+    line-height:30px;
+    font-size: 0.95rem;   
+}
+@media screen and (min-width:500px){
+    .story_m>img{
+        width: 70%;
+    }
+}
+@media screen and (min-width:769px){
+    .story_m{
+        width: 80%;
+        max-width: 650px;
+    }
+    .story_m>h2{
+        font-size: 1.1rem;
+    }
+    .story_m>h2>span{
+        display: inline-block;
+    }
+    .story_m>h2>br{
+        display: none;
+    }
+    .story_m>p{
+        font-size: 1rem;   
+    }
+}
+/*--    以下為story 品牌故事 區--*/
+.story_bgs{
+    width: 100%;
+/*    background-color: aquamarine;*/
+}
+.story_bg{
+    width: 40%;
+    max-width: 450px;
+/*    border: 3px solid red;*/
+/*    height: 100%;*/
+}
+.story_l{
+    position: absolute;
+    bottom: 0%;
+}
+.story_r{
+    position: absolute;
+    right: 0px;
+    top: 0%;  
+}
+.story_bgin{
+    position: relative;
+}
+@media screen and (min-width:769px){
+    .story_bg{
+        width: 30%;
+        max-width: 450px;
+/*        border: 3px solid red;*/
+    }
+    .story_r{
+        top: -20%;
+    }
+}
+@media screen and (min-width:1140px){
+    .story_l{
+        bottom: -25%;
+    }
+}
+/*--    以下為story 品牌故事 L&R 區--*/
+.story_bgin .cat,.catmeat,.dog,.dogmeat{
+    display: none;
+}
+@media screen and (min-width:1500px){
+    .story_bgin .cat,.dog{
+        display: block;
+    }
+    .story_bgin .cat{
+        position: absolute;
+        top:-40%;
+        width: 100%;
+        max-width: 330px;
+    }
+    .story_bgin .dog{
+        position: absolute;
+        top:20%;
+        width: 75%;
+        max-width: 366px;
+    }
+}
+@media screen and (min-width:1700px){
+    .story_bgin .catmeat,.dogmeat{
+        max-width: 180px;
+        display: block;
+    }
+    .catmeat{
+        position: absolute;
+        width: 40%;
+        top:50%;
+        right: -17%;
+    }
+    .dogmeat{
+        position: absolute;
+        width: 45%;
+        top:2%;
+    }
+}
+/*--以下為concept 四大品牌堅持 區--*/
+
+.concepts{
+/*    height: 2000px;*/
+/*    background-color: #2f8484;*/
+    text-align: center;
+    margin: 10% auto 7% auto;
+    max-width: 1140px;
+}
+.concepts h2{
+    font-size: 1.6rem;
+}
+.concepts>div{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.concept{
+    width: 49%;
+/*    border: 1px solid black;*/
+    max-width: 200px;
+    margin-bottom: 5%;
+}
+@media screen and (min-width:768px){
+    .concept{
+        width: 24%;
+        height: 100%;
+        max-width: 200px;
+    }
+}
+.concept_bgi{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+/*    background-color: #deb9be;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.concept>h3{
+    font-size: 1.3rem;
+}
+.concept>p{
+    display: none;
+}
+@media screen and (min-width:566px){
+    .concept>p{
+        display: block;
+        line-height: 30px;
+        font-weight: 300;
+        padding: 0 5%;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width:900px){
+    .concept>p{
+        padding: 0;
+        font-size: 1rem;
+    }
+}
+.concept_bgi01{
+    background-image: url(../images/index/four/quality-01.png);
+}
+.concept_bgi02{
+    background-image: url(../images/index/four/quality-02.png);
+}
+.concept_bgi03{
+    background-image: url(../images/index/four/quality-03.png);
+}
+.concept_bgi04{
+    background-image: url(../images/index/four/quality-04.png);
+}
+/*--以下為ingredient 鮮食成分 外部區--*/
+.ingredient{
+    width: 100%;
+    height: 500px;
+/*    background-color: burlywood;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.ingredient_m{
+    width: 90%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+/*    background-color: firebrick;*/
+    position: relative;
+}
+.ingredient_bg_l,.ingredient_bg_r{
+    display: none;
+    position: relative;
+    height: 100%;
+}
+.ingredient_bg_l img,.ingredient_bg_r img{
+    position: absolute;
+    width: 100%;
+}
+
+.ing_bg_l1{
+    top:0px;
+}
+.ing_bg_l2{
+    top: 25%;
+}
+.ing_bg_r1{
+    width: 40%;
+    left: 10%;
+    bottom: 10%;
+}
+.ing_bg_r2{
+    top:50%;
+}
+@media screen and (min-width:768px){
+    .ingredient{
+        justify-content: space-between;
+/*        height: 600px;*/
+    }
+    .ingredient_bg_l,.ingredient_bg_r{
+        display: block;
+        width: 23%;
+        max-width: 350px;
+    }
+}
+@media screen and (min-width:1300px){
+    .ingredient{
+        justify-content: space-between;
+/*        height: 800px;*/
+    }
+    .ingredient_m{
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+/*--以下為ingredient 鮮食成分 內部 區--*/
+.ingredient_m_bg,.ingredient_m_fds,.ingredient_m_descs{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 300px;
+    position: absolute;
+}
+.ingredient_m_fds>div,.ingredient_m_descs>div{
+    width: 100%;
+    height: 100%;
+}
+.ingredient_m_bg>img,.ingredient_m_fd>img,.ingredient_m_desc>img{
+    width: 100%;
+    height: 100%;
+}
+.ingredient_m_fd{
+    position: relative;
+}
+.ingredient_m_fd>img{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    display: none;
+}
+@media screen and (min-width:1300px){
+    .ingredient_m_bg,.ingredient_m_fds,.ingredient_m_descs{
+        max-height: 500px;
+        max-width: 500px;
+    }
+}
+.ingredient_m_fd>img.ds-block{
+    display: block;
+    animation-name: fdimg;
+    animation-duration: 0.3s;
+    animation-iteration-count:1;
+}
+@-webkit-keyframes fdimg {
+     0% {
+        transform: scale(0.1);
+    }
+     50% {
+        transform: scale(1.2);
+     }
+    100%{
+        transform: scale(1.0);
+    }
+ }
+/*--以下為shopping 商品連結 區--*/
+.shopping{
+    background-color: #FFF4CE;
+    position: relative;
+    padding-top: 2%;
+}
+.shop_icon,.shop_animal{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+}
+.icon_dog,.icon_cat,.shop_dog,.shop_cat{
+/*    border: 1px solid black;*/
+    display: block;
+    width: 30%;
+    height: 100%;
+    max-width: 120px;
+    margin: 0 1%;
+}
+.icon_dog,.icon_cat{
+    display: flex;
+    align-items: center;
+    margin: 2% 2%;
+}
+.shop_dog,.shop_cat{
+    max-width: 150px;
+}
+.icon_dog>img,.icon_cat>img,.shop_dog>img,.shop_cat>img{
+    width: 100%;
+}
+.footer_bg{
+    position: absolute;
+    bottom:-10px;
+    width: 100%;
+/*    border-bottom: 1px solid #FEDC5E;*/
+}
+.footer_bg>img{
+    width: 100%;
+}
+@media screen and (min-width:768px){
+    .footer_bg{
+        bottom:-20px;
+    }
+}
+@media screen and (min-width:931px){
+    .footer_bg{
+        bottom:-40px;
+    }
+}
+@media screen and (min-width:1650px){
+    .footer_bg{
+        bottom: -70px;
+    }
+}
+footer{
+    position: relative;
+}
+.slick-dots li button::before {
+    font-size: 20px;
+    color:#81552F;
+    border-radius: 50%;
+    padding: 1px;
+}
+.slick-dots li.slick-active button:before {
+    color:#81552F;
+/*    border: 2px solid #81552F;*/
+    
+}
